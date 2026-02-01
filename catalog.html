@@ -7,49 +7,175 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="img/logo.svg" alt="logo">
-        <input type="text">
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="cart.html">Корзина</a></li>
-            </ul>
-        </nav>
+    <header class="catalog-page center">
+        <section class="heading">
+            <img class="logo" src="./img/logo.svg" alt="logo">
+            <input class="heading__search" type="text" placeholder="Поиск">
+            <nav>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="catalog.html">Каталог</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="product.html">Корзина</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <h1 class="catalog-title">Каталог</h1>
     </header>
 
-    <section>
-        <h1>Каталог</h1>
-        <img src="img/product1.jpg" alt="armchair VILORA">
-        <h3>Кресло VILORA</h3>
-        <p>Мягкое и уютное, аккуратное и стильное. Упругие подушки, сиденья и приятная на ощупь ткань.</p>
-        <p>21000</p>
+    <section class="product-box center">
+        <div class="product-box__filters">
+            <nav class="product-box__breadcrumbs">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a href="index.html" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">Каталог товаров</li>
+                </ul>
+            </nav>
+            <div class="filters-box">
+                <select name="" id="" class="filters-box__list">
+                    <option value="filter" class="filters-box__item">Фильтрация</option>
+                    <option value="" class="filters-box__item">???</option>
+                    <option value="" class="filters-box__item">???</option>
+                </select>
+                <select name="" id="" class="filters-box__list">
+                    <option value="top" class="filters-box__item">По популярности</option>
+                    <option value="new" class="filters-box__item">Сначала новые</option>
+                    <option value="old" class="filters-box__item">Сначала старые</option>
+                </select>
+            </div>
+        </div>
+        <div class="product-box__content">
+            <article class="product">
+                <img class="product__img" src="./img/bed TATRAN.jpg" alt="chest VENT">
+                <h3 class="product__name">Кровать TATRAN</h3>
+                <p class="product__desc">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
+                <p class="product__price">45 000 руб.</p>
+
+            </article>
+
+            <article class="product">
+                <img class="product__img" src="./img/armchair VILORA.jpg" alt="armchair VILORA">
+                <h3 class="product__name">Кресло VILORA</h3>
+                <p class="product__desc">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань.</p>
+                <p class="product__price">21 000 руб.</p>
+
+            </article>
+
+            <article class="product">
+                <img class="product__img" src="./img/table MENU.jpg" alt="table MENU">
+                <h3 class="product__name">Стол MENU</h3>
+                <p class="product__desc">Для того чтобы трапезничать было приятно, необходим правильный обеденный стол.</p>
+                <p class="product__price">34 000 руб.</p>
+
+            </article>
+            
+            <article class="product">
+                <img class="product__img" src="./img/armchair ASKESTA.jpg" alt="armchair ASKESTA">
+                <h3 class="product__name">Кресло ASKESTA</h3>
+                <p class="product__desc">Высокоэластичный пенополиуретан в «начинке» кресла надежен и долговечен.</p>
+                <p class="product__price">68 000 руб.</p>
+
+            </article>
+
+            <article class="product">
+                <img class="product__img" src="./img/table NORMAN.jpg" alt="table NORMAN">
+                <h3 class="product__name">Стол NORMAN</h3>
+                <p class="product__desc">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки.</p>
+                <p class="product__price">40 000 руб.</p>
+
+            </article>
+
+            <article class="product">
+                <img class="product__img" src="./img/sofa NASTAN.jpg" alt="sofa NASTAN">
+                <h3 class="product__name">Диван NASTAN</h3>
+                <p class="product__desc">Модель отличается простотой линий и форм, отсутствием броского декора.</p>
+                <p class="product__price">80 000 руб.</p>
+
+            </article>
+            <article class="product">
+                <img class="product__img" src="./img/armchair ASKESTA.jpg" alt="armchair ASKESTA">
+                <h3 class="product__name">Кресло ASKESTA</h3>
+                <p class="product__desc">Высокоэластичный пенополиуретан в «начинке» кресла надежен и долговечен.</p>
+                <p class="product__price">68 000 руб.</p>
+
+            </article>
+
+            <article class="product">
+                <img class="product__img" src="./img/table NORMAN.jpg" alt="table NORMAN">
+                <h3 class="product__name">Стол NORMAN</h3>
+                <p class="product__desc">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки.</p>
+                <p class="product__price">40 000 руб.</p>
+
+            </article>
+
+            <article class="product">
+                <img class="product__img" src="./img/sofa NASTAN.jpg" alt="sofa NASTAN">
+                <h3 class="product__name">Диван NASTAN</h3>
+                <p class="product__desc">Модель отличается простотой линий и форм, отсутствием броского декора.</p>
+                <p class="product__price">80 000 руб.</p>
+
+            </article>
+            <article class="product">
+                <img class="product__img" src="./img/armchair ASKESTA.jpg" alt="armchair ASKESTA">
+                <h3 class="product__name">Кресло ASKESTA</h3>
+                <p class="product__desc">Высокоэластичный пенополиуретан в «начинке» кресла надежен и долговечен.</p>
+                <p class="product__price">68 000 руб.</p>
+
+            </article>
+
+            <article class="product">
+                <img class="product__img" src="./img/table NORMAN.jpg" alt="table NORMAN">
+                <h3 class="product__name">Стол NORMAN</h3>
+                <p class="product__desc">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки.</p>
+                <p class="product__price">40 000 руб.</p>
+
+            </article>
+
+            <article class="product">
+                <img class="product__img" src="./img/sofa NASTAN.jpg" alt="sofa NASTAN">
+                <h3 class="product__name">Диван NASTAN</h3>
+                <p class="product__desc">Модель отличается простотой линий и форм, отсутствием броского декора.</p>
+                <p class="product__price">80 000 руб.</p>
+
+            </article>
+        </div>
     </section>
 
-    <footer>
-        <h4>Меню</h4>
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="cart.html">Корзина</a></li>
-            </ul>
-        </nav>
+    <a href="#" class="catalog__link center">Показать еще</a>
 
-        <h4>Контакты</h4>
-        <a href="#">+7 908 800 80 80</a>
-        <a href="#">help@interier.com</a>
-
-        <a href="#"><img src="img/vk.svg" alt="social VK"></a>
-        <a href="#"><img src="img/telegram.svg" alt="social telegram"></a>
-        <a href="#"><img src="img/dzen.svg" alt="social dzen"></a>
-
-        <form>
-            <p>Получайте наши новости и обновления</p>
-            <input type="email">
-            <button>Подписаться</button>
-        </form>
-
+    <footer class="footer center">
+        <img class="footer__logo" src="./img/logo-black.svg" alt="logo">
+        <div class="footer__content">
+            <div class="footer__info">
+                <div class="footer__menu">
+                    <h4 class="footer__title">Меню</h4>
+                    <nav>
+                        <a class="footer__link" href="index.html">Главная</a>
+                        <a class="footer__link" href="catalog.html">Каталог</a>
+                        <a class="footer__link" href="cart.html">Корзина</a>
+                    </nav>
+                </div>
+                <div class="footer__menu">
+                    <h4 class="footer__title">Контакты</h4>
+                    <a class="footer__link" href="tel:+79088008080">+7 908 800 80 80</a>
+                    <a class="footer__link" href="mailto:help@interier.com">help@interier.com</a>
+                    <div class="footer__social">
+                        <a class="footer__link footer__link_social" href="#"><img src="img/vk.svg" alt="social VK"></a>
+                        <a class="footer__link footer__link_social" href="#"><img src="img/telegram.svg" alt="social telegram"></a>
+                        <a class="footer__link footer__link_social" href="#"><img src="img/dzen.svg" alt="social dzen"></a>
+                    </div>
+                </div>
+            </div>
+            <form class="form">
+                <p class="form__title">Получайте наши новости и обновления</p>
+                <input type="email" class="form__email" placeholder="Ваш e-mail">
+                <button class="form__btn">Подписаться</button>
+            </form>
+        </div>
     </footer>
 </body>
 </html>
