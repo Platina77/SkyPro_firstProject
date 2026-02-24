@@ -39,11 +39,32 @@
                 </ul>
             </nav>
             <div class="filters-box">
-                <select name="" id="" class="filters-box__list">
-                    <option value="filter" class="filters-box__item">Фильтрация</option>
-                    <option value="" class="filters-box__item">???</option>
-                    <option value="" class="filters-box__item">???</option>
-                </select>
+                <button class="filters-box__list">
+                    <p class="filters-box__list-title">Фильтрация</p>
+                    <form action="#" method="get" class="catalog-form">
+                    <div class="catalog-form__box">
+                        <fieldsed class="catalog-form__items">
+                            <legend class="catalog-form__subtitle">Сроки доставки</legend>
+                            <input type="radio" id="nomatter" name="radio" class="catalog-form__radio">
+                            <label for="Nomatter" class="catalog-form__label">Неважно</label>
+
+                            <input type="radio" id="today" name="radio" class="catalog-form__radio">
+                            <label for="today" class="catalog-form__label">Сегодня</label>
+
+                            <input type="radio" id="tomorrow" name="radio" class="catalog-form__radio">
+                            <label for="tomorrow" class="catalog-form__label">Завтра</label>
+
+                            <input type="radio" id="threedays" name="radio" class="catalog-form__radio">
+                            <label for="threedays" class="catalog-form__label">Завтра</label>
+
+                            <input type="radio" id="sevendays" name="radio" class="catalog-form__radio">
+                            <label for="sevendays" class="catalog-form__label">Завтра</label>
+                        </fieldsed>
+                    </div>
+                </form>
+                </button>
+                
+
                 <select name="" id="" class="filters-box__list">
                     <option value="top" class="filters-box__item">По популярности</option>
                     <option value="new" class="filters-box__item">Сначала новые</option>
