@@ -29,7 +29,7 @@
     </header>
 
     <section class="product-box center">
-        <div class="product-box__filters">
+        <div class="product-box__nav">
             <nav class="product-box__breadcrumbs">
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs__item">
@@ -39,168 +39,19 @@
                 </ul>
             </nav>
             <div class="filters-box">
-                <button class="filters-box__list">
-                    <p class="filters-box__list-title">Фильтрация</p>
-                    <form action="#" method="get" class="catalog-form">
-                        <div class="catalog-form__box">
-                            <div class="catalog-form__box-left">
-                                <fieldsed class="catalog-form__items">
-                                    <legend class="catalog-form__subtitle">Сроки доставки</legend>
-                                    <div class="catalog-form__radio-box">
-                                        <input type="radio" id="nomatter" name="radio" class="catalog-form__radio">
-                                        <label for="Nomatter" class="catalog-form__label-radio">Неважно</label>
-                                    </div>
-
-                                    <div class="catalog-form__radio-box">
-                                        <input type="radio" id="today" name="radio" class="catalog-form__radio">
-                                        <label for="today" class="catalog-form__label-radio">Сегодня</label>
-                                    </div>
-
-                                    <div class="catalog-form__radio-box">
-                                        <input type="radio" id="tomorrow" name="radio" class="catalog-form__radio">
-                                        <label for="tomorrow" class="catalog-form__label-radio">Завтра</label>
-                                    </div>
-
-                                    <div class="catalog-form__radio-box">
-                                        <input type="radio" id="threedays" name="radio" class="catalog-form__radio">
-                                        <label for="threedays" class="catalog-form__label-radio">Завтра</label>
-                                    </div>
-
-                                    <div class="catalog-form__radio-box">
-                                        <input type="radio" id="sevendays" name="radio" class="catalog-form__radio">
-                                        <label for="sevendays" class="catalog-form__label-radio">Завтра</label>
-                                    </div>
-                                </fieldsed>
-
-                                <fieldsed class="catalog-form__items">
-                                    <legend class="catalog-form__subtitle">Цена</legend>
-                                    <div class="catalog-form__box">
-                                        <input type="range" id="range" min="0" max="100" value="100">
-                                    </div>
-                                </fieldsed>
-
-                                <fieldsed class="catalog-form__items catalog-form__items_row">
-                                    <legend class="catalog-form__subtitle catalog-form__subtitle_row">Цвет</legend>
-                                    <div class="catalog-form__checkbox-box">
-                                        <input type="checkbox" id="white" class="catalog-form__checkbox">
-                                        <label for="white" class="catalog-form__label"></label>
-                                    </div>
-
-                                    <div class="catalog-form__checkbox-box">
-                                        <input type="checkbox" id="black" class="catalog-form__checkbox">
-                                        <label for="black" class="catalog-form__label"></label>
-                                    </div>
-
-                                    <div class="catalog-form__checkbox-box">
-                                        <input type="checkbox" id="grey" class="catalog-form__checkbox">
-                                        <label for="grey" class="catalog-form__label"></label>
-                                    </div>
-
-                                    <div class="catalog-form__checkbox-box">
-                                        <input type="checkbox" id="red" class="catalog-form__checkbox">
-                                        <label for="red" class="catalog-form__label"></label>
-                                    </div>
-
-                                    <div class="catalog-form__checkbox-box">
-                                        <input type="checkbox" id="orange" class="catalog-form__checkbox">
-                                        <label for="orange" class="catalog-form__label"></label>
-                                    </div>
-
-                                    <div class="catalog-form__checkbox-box">
-                                        <input type="checkbox" id="yellow" class="catalog-form__checkbox">
-                                        <label for="yellow" class="catalog-form__label"></label>
-                                    </div>
-
-                                    <div class="catalog-form__checkbox-box">
-                                        <input type="checkbox" id="green" class="catalog-form__checkbox">
-                                        <label for="green" class="catalog-form__label"></label>
-                                    </div>
-
-                                    <div class="catalog-form__checkbox-box">
-                                        <input type="checkbox" id="blue" class="catalog-form__checkbox">
-                                        <label for="blue" class="catalog-form__label"></label>
-                                    </div>
-
-                                    <div class="catalog-form__checkbox-box">
-                                        <input type="checkbox" id="darkblue" class="catalog-form__checkbox">
-                                        <label for="darkblue" class="catalog-form__label"></label>
-                                    </div>
-
-                                    <div class="catalog-form__checkbox-box">
-                                        <input type="checkbox" id="violet" class="catalog-form__checkbox">
-                                        <label for="violet" class="catalog-form__label"></label>
-                                    </div>
-
-                                    <div class="catalog-form__checkbox-box">
-                                        <input type="checkbox" id="pink" class="catalog-form__checkbox">
-                                        <label for="pink" class="catalog-form__label"></label>
-                                    </div>
-                                </fieldsed>
-                            </div>
-
-                            <div class="catalog-form__box-right">
-                                <fieldsed class="catalog-form__items">
-                                    <legend class="catalog-form__subtitle">Тип комнаты</legend>
-                                    <div class="catalog-form__checkbox-box">
-                                        <input type="checkbox" id="kitchen" class="catalog-form__checkbox">
-                                        <label for="kitchen" class="catalog-form__label">Кухня и столовая</label>
-                                    </div>
-
-                                    <div class="catalog-form__checkbox-box">
-                                        <input type="checkbox" id="bathroom" class="catalog-form__checkbox">
-                                        <label for="bathroom" class="catalog-form__label">Ванная комната</label>
-                                    </div>
-
-                                    <div class="catalog-form__checkbox-box">
-                                        <input type="checkbox" id="children" class="catalog-form__checkbox">
-                                        <label for="children" class="catalog-form__label">Детская комната</label>
-                                    </div>
-
-                                    <div class="catalog-form__checkbox-box">
-                                        <input type="checkbox" id="homeoffice" class="catalog-form__checkbox">
-                                        <label for="homeoffice" class="catalog-form__label">Домашний офис</label>
-                                    </div>
-
-                                    <div class="catalog-form__checkbox-box">
-                                        <input type="checkbox" id="living" class="catalog-form__checkbox">
-                                        <label for="living" class="catalog-form__label">Гостиная</label>
-                                    </div>
-
-                                    <div class="catalog-form__checkbox-box">
-                                        <input type="checkbox" id="hallway" class="catalog-form__checkbox">
-                                        <label for="hallway" class="catalog-form__label">Прихожая</label>
-                                    </div>
-
-                                    <div class="catalog-form__checkbox-box">
-                                        <input type="checkbox" id="bedroom" class="catalog-form__checkbox">
-                                        <label for="bedroom" class="catalog-form__label">Спальня</label>
-                                    </div>
-
-                                    <div class="catalog-form__checkbox-box">
-                                        <input type="checkbox" id="wardrobe" class="catalog-form__checkbox">
-                                        <label for="wardrobe" class="catalog-form__label">Гардероб</label>
-                                    </div>
-
-                                    <div class="catalog-form__checkbox-box">
-                                        <input type="checkbox" id="dacha" class="catalog-form__checkbox">
-                                        <label for="dacha" class="catalog-form__label">Дача</label>
-                                    </div>
-
-                                    <div class="catalog-form__checkbox-box">
-                                        <input type="checkbox" id="lighting" class="catalog-form__checkbox">
-                                        <label for="lighting" class="catalog-form__label">Свет</label>
-                                    </div>
-
-                                </fieldsed>
-                            </div>
+                <button class="button filter-btn">Фильтрация</button>
+                <form action="#" method="get" class="filter-form">
+                    <div class="filter-form__box">
+                        <div class="filter-form__left">
                             
                         </div>
-                        <a class="catalog-form__btn">Применить</a>
-                    </form>
-                </button>
-                
+                        <div class="filter-form__right">
 
-                <select name="" id="" class="filters-box__list">
+                        </div>
+                    </div>
+                </form>
+
+                <select name="" id="" class="button filter-btn">
                     <option value="top" class="filters-box__item">По популярности</option>
                     <option value="new" class="filters-box__item">Сначала новые</option>
                     <option value="old" class="filters-box__item">Сначала старые</option>
