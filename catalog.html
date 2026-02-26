@@ -39,18 +39,156 @@
                 </ul>
             </nav>
             <div class="filters-box">
-                <button class="button filter-btn">Фильтрация</button>
-                <form action="#" method="get" class="filter-form">
-                    <div class="filter-form__box">
-                        <div class="filter-form__left">
-                            
-                        </div>
-                        <div class="filter-form__right">
+                <div class="filter-box__filter">
+                    <button class="button filter-btn">Фильтрация</button>
+                    <form action="#" method="get" class="filter-form">
+                        <div class="filter-form__box">
+                            <div class="filter-form__left">
+                                <fieldset class="filter-form__items filter-form__items_column">
+                                    <legend class="filter-form__item-title">Сроки доставки</legend>
+                                    <div class="filter-form__item">
+                                        <input type="radio" id="nomatter" name="radio" class="filter-form__input">
+                                        <label for="nomatter" class="filter-form__label filter-form__label_padding filter-form__label_standart filter-form__label_radio">Неважно</label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="radio" id="today" name="radio" class="filter-form__input">
+                                        <label for="today" class="filter-form__label filter-form__label_padding filter-form__label_standart filter-form__label_radio">Сегодня</label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="radio" id="tomorrow" name="radio" class="filter-form__input">
+                                        <label for="tomorrow" class="filter-form__label filter-form__label_padding filter-form__label_standart filter-form__label_radio">Завтра</label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="radio" id="threedays" name="radio" class="filter-form__input">
+                                        <label for="threedays" class="filter-form__label filter-form__label_padding filter-form__label_standart filter-form__label_radio">3 дня</label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="radio" id="sevendays" name="radio" class="filter-form__input">
+                                        <label for="sevendays" class="filter-form__label filter-form__label_padding filter-form__label_standart filter-form__label_radio">7 дней</label>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="filter-form__items filter-form__items_column">
+                                    <legend class="filter-form__item-title">Цена</legend>
+                                    <div class="filter-form__subtitle-box">
+                                        <p class="filter-form__subtitle">от 0 руб.</p>
+                                        <p class="filter-form__subtitle">до 100000 руб.</p>
+                                    </div>
+                                    <div class="filter-form__range">
+                                        <div class="filter-form__range-track"></div>
+                                        <input type="range" class="filter-form__range-thumb" min="0" max="100000" value="0">
+                                        <input type="range" class="filter-form__range-thumb" min="0" max="100000" value="100000">
+                                    </div>
+                                </fieldset>
+                                <fieldset class="filter-form__items filter-form__items_row">
+                                    <legend class="filter-form__item-title filter-form__item-title_empty">Цвет</legend>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="white" class="filter-form__input">
+                                        <label for="white" class="filter-form__label filter-form__label_standart filter-form__checkbox_white"></label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="black" class="filter-form__input">
+                                        <label for="black" class="filter-form__label filter-form__checkbox_black"></label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="grey" class="filter-form__input">
+                                        <label for="grey" class="filter-form__label filter-form__checkbox_grey"></label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="red" class="filter-form__input">
+                                        <label for="red" class="filter-form__label filter-form__checkbox_red"></label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="orange" class="filter-form__input">
+                                        <label for="orange" class="filter-form__label filter-form__checkbox_orange"></label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="yellow" class="filter-form__input">
+                                        <label for="yellow" class="filter-form__label filter-form__checkbox_yellow"></label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="green" class="filter-form__input">
+                                        <label for="green" class="filter-form__label filter-form__checkbox_green"></label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="turquoise" class="filter-form__input">
+                                        <label for="turquoise" class="filter-form__label filter-form__checkbox_turquoise"></label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="lightblue" class="filter-form__input">
+                                        <label for="lightblue" class="filter-form__label filter-form__checkbox_lightblue"></label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="darktblue" class="filter-form__input">
+                                        <label for="darktblue" class="filter-form__label filter-form__checkbox_darktblue"></label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="violet" class="filter-form__input">
+                                        <label for="violet" class="filter-form__label filter-form__checkbox_violet"></label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="purple" class="filter-form__input">
+                                        <label for="purple" class="filter-form__label filter-form__checkbox_purple"></label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="lilac" class="filter-form__input">
+                                        <label for="lilac" class="filter-form__label filter-form__checkbox_lilac"></label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="pink" class="filter-form__input">
+                                        <label for="pink" class="filter-form__label filter-form__checkbox_pink"></label>
+                                    </div>
+                                </fieldset>
+                            </div>
 
+                            <div class="filter-form__right">
+                                <fieldset class="filter-form__items filter-form__items_column">
+                                    <legend class="filter-form__item-title">Тип комнаты</legend>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="kitchen" class="filter-form__input">
+                                        <label for="kitchen" class="filter-form__label filter-form__label_standart filter-form__label_padding">Кухня и столовая</label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="bathroom" class="filter-form__input">
+                                        <label for="bathroom" class="filter-form__label filter-form__label_standart filter-form__label_padding">Ванная комната</label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="children" class="filter-form__input">
+                                        <label for="children" class="filter-form__label filter-form__label_standart filter-form__label_padding">Детская комната</label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="homeoffice" class="filter-form__input">
+                                        <label for="homeoffice" class="filter-form__label filter-form__label_standart filter-form__label_padding">Домашний офис</label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="living" class="filter-form__input">
+                                        <label for="living" class="filter-form__label filter-form__label_standart filter-form__label_padding">Гостиная</label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="hallway" class="filter-form__input">
+                                        <label for="hallway" class="filter-form__label filter-form__label_standart filter-form__label_padding">Прихожая</label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="bedroom" class="filter-form__input">
+                                        <label for="bedroom" class="filter-form__label filter-form__label_standart filter-form__label_padding">Спальня</label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="wardrobe" class="filter-form__input">
+                                        <label for="wardrobe" class="filter-form__label filter-form__label_standart filter-form__label_padding">Гардероб</label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="dacha" class="filter-form__input">
+                                        <label for="dacha" class="filter-form__label filter-form__label_standart filter-form__label_padding">Дача</label>
+                                    </div>
+                                    <div class="filter-form__item">
+                                        <input type="checkbox" id="light" class="filter-form__input">
+                                        <label for="light" class="filter-form__label filter-form__label_standart filter-form__label_padding">Свет</label>
+                                    </div>
+                                </fieldset>
+                                <button class="button filter-form__btn">Применить</button>  
+                            </div>
                         </div>
-                    </div>
-                </form>
-
+                    </form>
+                </div>
                 <select name="" id="" class="button filter-btn">
                     <option value="top" class="filters-box__item">По популярности</option>
                     <option value="new" class="filters-box__item">Сначала новые</option>
