@@ -73,6 +73,10 @@
 
     &__link{
         color: #000;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
 
         &:hover{
         text-decoration: none;
@@ -96,12 +100,18 @@
     }
 
     &__btn{
-        padding: 10px 33px;
+        padding: 10px 0;
+        width: 200px;
+        text-align: center;
         border-radius: 50px;
         background-color: #fff;
         border: 1px solid #000;
         text-decoration: none;
         color: #000;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
     
     &__form{
@@ -157,5 +167,6 @@
         padding: 10px;
         width: 100%;
         background-color: #F7F6F6;
+        margin-bottom: 100px;
     }
 }

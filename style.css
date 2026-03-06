@@ -494,6 +494,10 @@ select {
 }
 .cart__link {
   color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .cart__link:hover {
   text-decoration: none;
@@ -515,12 +519,18 @@ select {
   gap: 7px;
 }
 .cart__btn {
-  padding: 10px 33px;
+  padding: 10px 0;
+  width: 200px;
+  text-align: center;
   border-radius: 50px;
   background-color: #fff;
   border: 1px solid #000;
   text-decoration: none;
   color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .cart__form {
   grid-column: 9/13;
@@ -597,6 +607,7 @@ select {
   padding: 10px;
   width: 100%;
   background-color: #F7F6F6;
+  margin-bottom: 100px;
 }
 
 .catalog-page {
@@ -658,7 +669,7 @@ select {
   gap: 10px;
 }
 
-.filter-box__filter {
+.filters-box__filter {
   position: relative;
 }
 
@@ -694,7 +705,6 @@ select {
   right: 0;
   min-width: 526px;
 }
-
 .filter-form__box {
   background: #fff;
   -webkit-box-shadow: 0 4px 67px -12px rgba(0, 0, 0, 0.32);
@@ -706,7 +716,6 @@ select {
      -moz-column-gap: 65px;
           column-gap: 65px;
 }
-
 .filter-form__left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -717,11 +726,9 @@ select {
           flex-direction: column;
   gap: 32px;
 }
-
 .filter-form__items {
   border: none;
 }
-
 .filter-form__items_column {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -732,7 +739,6 @@ select {
           flex-direction: column;
   gap: 14px;
 }
-
 .filter-form__item-title {
   margin-bottom: 14px;
   color: #050505;
@@ -741,17 +747,14 @@ select {
   font-weight: 500;
   line-height: normal;
 }
-
 .filter-form__item {
   position: relative;
 }
-
 .filter-form__input {
   position: absolute;
   opacity: 0;
   /*   pointer-events: none; */
 }
-
 .filter-form__label {
   color: #000;
   font-size: 14px;
@@ -760,11 +763,6 @@ select {
   line-height: normal;
   cursor: pointer;
 }
-
-.filter-form__label_padding {
-  padding-left: 29px;
-}
-
 .filter-form__label::before {
   content: "";
   width: 15px;
@@ -775,19 +773,18 @@ select {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-
+.filter-form__label_padding {
+  padding-left: 29px;
+}
 .filter-form__label_standart::before {
   border: 1px solid #888;
 }
-
 .filter-form__label_radio::before {
   border-radius: 50%;
 }
-
 .filter-form__input:checked + .filter-form__label::before {
   border: 1px solid #000;
 }
-
 .filter-form__input:checked + .filter-form__label::after {
   content: "";
   width: 4px;
@@ -800,7 +797,6 @@ select {
   -webkit-transform: translateY(-70%) rotate(45deg);
           transform: translateY(-70%) rotate(45deg);
 }
-
 .filter-form__subtitle-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -814,12 +810,10 @@ select {
   font-weight: 400;
   line-height: normal;
 }
-
 .filter-form__range {
   position: relative;
   width: 100%;
 }
-
 .filter-form__range-track {
   position: absolute;
   top: 50%;
@@ -828,7 +822,6 @@ select {
   height: 1px;
   background: #000;
 }
-
 .filter-form__range-thumb {
   position: absolute;
   width: 100%;
@@ -837,7 +830,6 @@ select {
      -moz-appearance: none;
           appearance: none;
 }
-
 .filter-form__range-thumb::-webkit-slider-thumb {
   -webkit-appearance: none;
           appearance: none;
@@ -848,7 +840,6 @@ select {
   cursor: pointer;
   margin-top: -4px;
 }
-
 .filter-form__items_row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -857,80 +848,64 @@ select {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
 .filter-form__item-title_empty {
   margin-bottom: 29px;
 }
-
 .filter-form__checkbox_white::before {
   background: #fff;
 }
-
 .filter-form__checkbox_black::before {
   background: #000;
   border: 1px solid #000;
 }
-
 .filter-form__checkbox_grey::before {
   background: #737373;
   border: 1px solid #737373;
 }
-
 .filter-form__checkbox_red::before {
   background: #FF0000;
   border: 1px solid #FF0000;
 }
-
 .filter-form__checkbox_orange::before {
   background: #FF7A41;
   border: 1px solid #FF7A41;
 }
-
 .filter-form__checkbox_yellow::before {
   background: #F2CB01;
   border: 1px solid #F2CB01;
 }
-
 .filter-form__checkbox_green::before {
   background: #00BF2A;
   border: 1px solid #00BF2A;
 }
-
 .filter-form__checkbox_turquoise::before {
   background: #1CCC97;
   border: 1px solid #1CCC97;
 }
-
 .filter-form__checkbox_lightblue::before {
   background: #009FE3;
   border: 1px solid #009FE3;
 }
-
 .filter-form__checkbox_darktblue::before {
   background: #000AF8;
   border: 1px solid #000AF8;
 }
-
 .filter-form__checkbox_violet::before {
   background: #6710D6;
   border: 1px solid #6710D6;
 }
-
 .filter-form__checkbox_purple::before {
   background: #9D0DB5;
   border: 1px solid #9D0DB5;
 }
-
 .filter-form__checkbox_lilac::before {
   background: #D89AFF;
   border: 1px solid #D89AFF;
 }
-
 .filter-form__checkbox_pink::before {
   background: #FF65A6;
   border: 1px solid #FF65A6;
 }
-
 .filter-form__input:checked + .filter-form__checkbox_violet::after,
 .filter-form__input:checked + .filter-form__checkbox_purple::after,
 .filter-form__input:checked + .filter-form__checkbox_black::after,
@@ -939,11 +914,59 @@ select {
   border-right: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
-
 .filter-form__btn {
   margin-top: 98px;
   border: 1px solid #040404;
   width: 100%;
   padding: 10px 0;
   background: #fff;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+  .for__item {
+    height: 268px;
+  }
+  .product-box__content {
+    -webkit-column-gap: 29px;
+       -moz-column-gap: 29px;
+            column-gap: 29px;
+    row-gap: 39px;
+  }
+  .footer__logo {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 833px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .product {
+    width: 345px;
+  }
+}
+@media (max-width: 1024px) {
+  .filter-form {
+    left: 51%;
+    -webkit-transform: translateX(-38%);
+            transform: translateX(-38%);
+  }
+  .filter-form__box {
+    padding: 40px 48px;
+  }
+}
+@media (max-width: 1024px) {
+  .cart {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .cart__content {
+    grid-column: 1/9;
+  }
+  .cart__form {
+    grid-column: 1/5;
+  }
 }/*# sourceMappingURL=style.css.map */

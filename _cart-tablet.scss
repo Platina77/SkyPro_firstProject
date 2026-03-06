@@ -1,0 +1,15 @@
+@media (max-width: 1024px){
+    .cart{
+        grid-template-columns: repeat(8, 1fr);
+
+        &__content{
+            grid-column: 1 / 9;
+        }
+
+        &__form{
+            grid-column: 1 / 5;
+        }
+    }
+
+
+}
