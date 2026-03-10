@@ -69,11 +69,15 @@ select{
     text-decoration: underline;
 }
 
+.menu-mob{
+    display: none;
+}
+
 .intro{
     padding-top: 63px;
     padding-bottom: 374px;
     color: #fff;
-    max-width: 792px;
+    max-width: 768px;
 }
 
 .intro__header{
@@ -134,22 +138,37 @@ select{
 
 .for__item1{
     background-image: url(./img/for-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .for__item2{
     background-image: url(./img/for-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .for__item3{
     background-image: url(./img/for-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .for__item4{
     background-image: url(./img/for-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .for__item5{
     background-image: url(./img/for-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /*Специальные предложения*/
@@ -227,7 +246,7 @@ select{
     font-weight: 400;
     color: #000;
     display: block;
-    margin: 31px 0 64px;
+    margin: 40px 0 64px;
     text-decoration: underline;
 }
 
@@ -339,3 +358,4 @@ select{
 @import 'index-tablet';
 @import 'catalog-tablet';
 @import 'cart-tablet';
+@import 'index-mob';
