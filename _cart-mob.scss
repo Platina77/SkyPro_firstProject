@@ -1,0 +1,40 @@
+@media (max-width: 767px){
+    .cart-page{
+        margin-bottom: 92px;
+    }
+    
+    .cart{
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+
+        &__head-box{
+            display: none;
+        }
+
+        &__item{
+            padding-top: 18px;
+            padding-bottom: 30px;
+        }
+
+        &__name{
+            font-size: 18px;
+        }
+
+        &__price{
+            font-size: 14px;
+        }
+
+        &__form{
+            max-width: 378px;
+        }
+    }
+}
+
+@media (max-width: 464px){
+    .cart{
+        &__img{
+            display: none;
+        }
+    }
+}

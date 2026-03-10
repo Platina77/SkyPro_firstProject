@@ -1,0 +1,43 @@
+@media(max-width: 767px){
+    .product-box{
+        &__nav{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    .breadcrumbs{
+        &__link{
+        font-size: 14px;
+        }
+    }
+
+    .filters-box{
+        flex-direction: column;
+
+        &__btn{
+            &_mob{
+                order: -1;
+            }
+        }
+    }
+
+    .filter-form{
+        min-width: 287px;
+        left: 0;
+        transform: translateX(0%);
+
+        &__box{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__right{
+            margin-top: 39px;
+        }
+
+        &__btn{
+            margin-top: 36px;
+        }
+    }
+}
