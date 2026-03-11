@@ -100,6 +100,10 @@ select{
     color: #fff;
 }
 
+.intro__link:hover{
+    text-decoration: none;
+}
+
 /*Мебель для...*/
 
 /* .for{
@@ -193,6 +197,7 @@ select{
 
 .product{
     width: 378px;
+    position: relative;
 }
 
 .product__img{
@@ -241,13 +246,32 @@ select{
     color: #050505;
 }
 
+.product__icon-box{
+    display: none;
+}
+
+.product:hover .product__icon-box{
+    display: flex;
+    gap: 21px;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    align-items: center;
+}
+
 .link-more{
     font-size: 16px;
     font-weight: 400;
     color: #000;
-    display: block;
     margin: 40px 0 64px;
-    text-decoration: underline;
+    display: block;
+    padding-left: calc(50% - 600px);
+    transition: all 0.5s;
+}
+
+.link-more:hover{
+    text-decoration: none;
+    color: #888888;
 }
 
 .footer{
@@ -309,6 +333,15 @@ select{
 .footer__link_social{
     display: inline;
     text-decoration: none;
+    // transition: fill 0.5s;
+}
+
+.footer__link_social .icon{
+   transition: fill 0.5s;
+}
+
+.footer__link_social:hover .icon{
+    fill: #000000;
 }
 
 .form{
@@ -345,6 +378,7 @@ select{
     padding: 12px;
     font-size: 12px;
     color: #000;
+    transition: all 1s;
 }
 
 .form__btn:hover{

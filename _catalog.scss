@@ -80,6 +80,7 @@
     top:calc(100% + 14px);
     right: 0;
     min-width: 526px;
+    z-index: 1;
 
     &__box{
       background: #fff;

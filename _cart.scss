@@ -70,6 +70,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        transition: all 0.5s;
 
         &:hover{
         text-decoration: none;
@@ -105,6 +106,11 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        transition: all 1s;
+        &:hover{
+            background: #000;
+            color: #fff;
+        }
     }
     
     &__form{
@@ -161,5 +167,10 @@
         width: 100%;
         background-color: #F7F6F6;
         margin-bottom: 100px;
+        transition: all 1s;
+        &:hover{
+            background: #000;
+            color: #fff;
+        }
     }
 }

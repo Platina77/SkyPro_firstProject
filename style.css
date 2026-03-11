@@ -127,6 +127,10 @@ select {
   color: #fff;
 }
 
+.intro__link:hover {
+  text-decoration: none;
+}
+
 /*Мебель для...*/
 /* .for{
     margin-bottom: 64px;
@@ -229,6 +233,7 @@ select {
 
 .product {
   width: 378px;
+  position: relative;
 }
 
 .product__img {
@@ -281,13 +286,37 @@ select {
   color: #050505;
 }
 
+.product__icon-box {
+  display: none;
+}
+
+.product:hover .product__icon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 21px;
+  right: 10px;
+  top: 10px;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .link-more {
   font-size: 16px;
   font-weight: 400;
   color: #000;
-  display: block;
   margin: 40px 0 64px;
-  text-decoration: underline;
+  display: block;
+  padding-left: calc(50% - 600px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.link-more:hover {
+  text-decoration: none;
+  color: #888888;
 }
 
 .footer {
@@ -371,6 +400,15 @@ select {
   text-decoration: none;
 }
 
+.footer__link_social .icon {
+  -webkit-transition: fill 0.5s;
+  transition: fill 0.5s;
+}
+
+.footer__link_social:hover .icon {
+  fill: #000000;
+}
+
 .form {
   width: 260px;
 }
@@ -421,6 +459,8 @@ select {
   padding: 12px;
   font-size: 12px;
   color: #000;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .form__btn:hover {
@@ -510,6 +550,8 @@ select {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .cart__link:hover {
   text-decoration: none;
@@ -543,6 +585,12 @@ select {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.cart__btn:hover {
+  background: #000;
+  color: #fff;
 }
 .cart__form {
   grid-column: 9/13;
@@ -620,6 +668,12 @@ select {
   width: 100%;
   background-color: #F7F6F6;
   margin-bottom: 100px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.cart__form-btn:hover {
+  background: #000;
+  color: #fff;
 }
 
 .catalog-page {
@@ -716,6 +770,7 @@ select {
   top: calc(100% + 14px);
   right: 0;
   min-width: 526px;
+  z-index: 1;
 }
 .filter-form__box {
   background: #fff;
