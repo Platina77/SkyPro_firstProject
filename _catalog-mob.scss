@@ -12,9 +12,11 @@
         }
     }
 
-    .filters-box{
+    .product-box__filters-box{
         flex-direction: column;
+    }
 
+    .filters-box{
         &__btn{
             &_mob{
                 order: -1;

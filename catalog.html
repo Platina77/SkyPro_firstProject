@@ -12,15 +12,17 @@
 <body>
     <header class="catalog-page center page">
         <section class="heading">
-            <img class="logo" src="./img/logo.svg" alt="logo">
+            <a href="./index.html" class="index-link">
+                <img class="logo" src="./img/logo.svg" alt="logo">
+            </a>
             <input class="heading__search" type="text" placeholder="Поиск">
             <nav class="heading__nav">
                 <ul class="menu">
                     <li class="menu__item">
-                        <a class="menu__link" href="catalog.html">Каталог</a>
+                        <a class="menu__link" href="#">Каталог</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="product.html">Корзина</a>
+                        <a class="menu__link" href="./cart.html">Корзина</a>
                     </li>
                 </ul>
             </nav>
@@ -50,7 +52,7 @@
                 </a>
             </div>
         </section>
-        <h1 class="page__title">Каталог</h1>
+        <h1 class="page-title">Каталог</h1>
     </header>
 
     <section class="product-box center">
@@ -63,8 +65,8 @@
                     <li class="breadcrumbs__item">Каталог товаров</li>
                 </ul>
             </nav>
-            <div class="filters-box">
-                <div class="filters-box__filter">
+            <div class="product-box__filters-box">
+                <div class="filters-box">
                     <button class="button filters-box__btn">Фильтрация</button>
                     <form action="#" method="get" class="filter-form">
                         <div class="filter-form__box">
@@ -73,23 +75,23 @@
                                     <legend class="filter-form__item-title">Сроки доставки</legend>
                                     <div class="filter-form__item">
                                         <input type="radio" id="nomatter" name="radio" class="filter-form__input">
-                                        <label for="nomatter" class="filter-form__label filter-form__label_padding filter-form__label_standart filter-form__label_radio">Неважно</label>
+                                        <label for="nomatter" class="filter-form__label filter-form__label_padding filter-form__label_standard filter-form__label_radio">Неважно</label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="radio" id="today" name="radio" class="filter-form__input">
-                                        <label for="today" class="filter-form__label filter-form__label_padding filter-form__label_standart filter-form__label_radio">Сегодня</label>
+                                        <label for="today" class="filter-form__label filter-form__label_padding filter-form__label_standard filter-form__label_radio">Сегодня</label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="radio" id="tomorrow" name="radio" class="filter-form__input">
-                                        <label for="tomorrow" class="filter-form__label filter-form__label_padding filter-form__label_standart filter-form__label_radio">Завтра</label>
+                                        <label for="tomorrow" class="filter-form__label filter-form__label_padding filter-form__label_standard filter-form__label_radio">Завтра</label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="radio" id="threedays" name="radio" class="filter-form__input">
-                                        <label for="threedays" class="filter-form__label filter-form__label_padding filter-form__label_standart filter-form__label_radio">3 дня</label>
+                                        <label for="threedays" class="filter-form__label filter-form__label_padding filter-form__label_standard filter-form__label_radio">3 дня</label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="radio" id="sevendays" name="radio" class="filter-form__input">
-                                        <label for="sevendays" class="filter-form__label filter-form__label_padding filter-form__label_standart filter-form__label_radio">7 дней</label>
+                                        <label for="sevendays" class="filter-form__label filter-form__label_padding filter-form__label_standard filter-form__label_radio">7 дней</label>
                                     </div>
                                 </fieldset>
                                 <fieldset class="filter-form__items filter-form__items_column">
@@ -108,59 +110,59 @@
                                     <legend class="filter-form__item-title filter-form__item-title_empty">Цвет</legend>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="white" class="filter-form__input">
-                                        <label for="white" class="filter-form__label filter-form__label_standart filter-form__checkbox_white"></label>
+                                        <label for="white" class="filter-form__label filter-form__label_standard filter-form__checkbox filter-form__checkbox_white"></label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="black" class="filter-form__input">
-                                        <label for="black" class="filter-form__label filter-form__checkbox_black"></label>
+                                        <label for="black" class="filter-form__label filter-form__checkbox filter-form__checkbox_black"></label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="grey" class="filter-form__input">
-                                        <label for="grey" class="filter-form__label filter-form__checkbox_grey"></label>
+                                        <label for="grey" class="filter-form__label filter-form__checkbox filter-form__checkbox_grey"></label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="red" class="filter-form__input">
-                                        <label for="red" class="filter-form__label filter-form__checkbox_red"></label>
+                                        <label for="red" class="filter-form__label filter-form__checkbox filter-form__checkbox_red"></label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="orange" class="filter-form__input">
-                                        <label for="orange" class="filter-form__label filter-form__checkbox_orange"></label>
+                                        <label for="orange" class="filter-form__label filter-form__checkbox filter-form__checkbox_orange"></label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="yellow" class="filter-form__input">
-                                        <label for="yellow" class="filter-form__label filter-form__checkbox_yellow"></label>
+                                        <label for="yellow" class="filter-form__label filter-form__checkbox filter-form__checkbox_yellow"></label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="green" class="filter-form__input">
-                                        <label for="green" class="filter-form__label filter-form__checkbox_green"></label>
+                                        <label for="green" class="filter-form__label filter-form__checkbox filter-form__checkbox_green"></label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="turquoise" class="filter-form__input">
-                                        <label for="turquoise" class="filter-form__label filter-form__checkbox_turquoise"></label>
+                                        <label for="turquoise" class="filter-form__label filter-form__checkbox filter-form__checkbox_turquoise"></label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="lightblue" class="filter-form__input">
-                                        <label for="lightblue" class="filter-form__label filter-form__checkbox_lightblue"></label>
+                                        <label for="lightblue" class="filter-form__label filter-form__checkbox filter-form__checkbox_lightblue"></label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="darktblue" class="filter-form__input">
-                                        <label for="darktblue" class="filter-form__label filter-form__checkbox_darktblue"></label>
+                                        <label for="darktblue" class="filter-form__label filter-form__checkbox filter-form__checkbox_darktblue"></label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="violet" class="filter-form__input">
-                                        <label for="violet" class="filter-form__label filter-form__checkbox_violet"></label>
+                                        <label for="violet" class="filter-form__label filter-form__checkbox filter-form__checkbox_violet"></label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="purple" class="filter-form__input">
-                                        <label for="purple" class="filter-form__label filter-form__checkbox_purple"></label>
+                                        <label for="purple" class="filter-form__label filter-form__checkbox filter-form__checkbox_purple"></label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="lilac" class="filter-form__input">
-                                        <label for="lilac" class="filter-form__label filter-form__checkbox_lilac"></label>
+                                        <label for="lilac" class="filter-form__label filter-form__checkbox filter-form__checkbox_lilac"></label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="pink" class="filter-form__input">
-                                        <label for="pink" class="filter-form__label filter-form__checkbox_pink"></label>
+                                        <label for="pink" class="filter-form__label filter-form__checkbox filter-form__checkbox_pink"></label>
                                     </div>
                                 </fieldset>
                             </div>
@@ -170,43 +172,43 @@
                                     <legend class="filter-form__item-title">Тип комнаты</legend>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="kitchen" class="filter-form__input">
-                                        <label for="kitchen" class="filter-form__label filter-form__label_standart filter-form__label_padding">Кухня и столовая</label>
+                                        <label for="kitchen" class="filter-form__label filter-form__label_standard filter-form__label_padding">Кухня и столовая</label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="bathroom" class="filter-form__input">
-                                        <label for="bathroom" class="filter-form__label filter-form__label_standart filter-form__label_padding">Ванная комната</label>
+                                        <label for="bathroom" class="filter-form__label filter-form__label_standard filter-form__label_padding">Ванная комната</label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="children" class="filter-form__input">
-                                        <label for="children" class="filter-form__label filter-form__label_standart filter-form__label_padding">Детская комната</label>
+                                        <label for="children" class="filter-form__label filter-form__label_standard filter-form__label_padding">Детская комната</label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="homeoffice" class="filter-form__input">
-                                        <label for="homeoffice" class="filter-form__label filter-form__label_standart filter-form__label_padding">Домашний офис</label>
+                                        <label for="homeoffice" class="filter-form__label filter-form__label_standard filter-form__label_padding">Домашний офис</label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="living" class="filter-form__input">
-                                        <label for="living" class="filter-form__label filter-form__label_standart filter-form__label_padding">Гостиная</label>
+                                        <label for="living" class="filter-form__label filter-form__label_standard filter-form__label_padding">Гостиная</label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="hallway" class="filter-form__input">
-                                        <label for="hallway" class="filter-form__label filter-form__label_standart filter-form__label_padding">Прихожая</label>
+                                        <label for="hallway" class="filter-form__label filter-form__label_standard filter-form__label_padding">Прихожая</label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="bedroom" class="filter-form__input">
-                                        <label for="bedroom" class="filter-form__label filter-form__label_standart filter-form__label_padding">Спальня</label>
+                                        <label for="bedroom" class="filter-form__label filter-form__label_standard filter-form__label_padding">Спальня</label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="wardrobe" class="filter-form__input">
-                                        <label for="wardrobe" class="filter-form__label filter-form__label_standart filter-form__label_padding">Гардероб</label>
+                                        <label for="wardrobe" class="filter-form__label filter-form__label_standard filter-form__label_padding">Гардероб</label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="dacha" class="filter-form__input">
-                                        <label for="dacha" class="filter-form__label filter-form__label_standart filter-form__label_padding">Дача</label>
+                                        <label for="dacha" class="filter-form__label filter-form__label_standard filter-form__label_padding">Дача</label>
                                     </div>
                                     <div class="filter-form__item">
                                         <input type="checkbox" id="light" class="filter-form__input">
-                                        <label for="light" class="filter-form__label filter-form__label_standart filter-form__label_padding">Свет</label>
+                                        <label for="light" class="filter-form__label filter-form__label_standard filter-form__label_padding">Свет</label>
                                     </div>
                                 </fieldset>
                                 <button class="button filter-form__btn">Применить</button>  
@@ -214,7 +216,7 @@
                         </div>
                     </form>
                 </div>
-                <select name="" id="" class="button filters-box__btn filters-box__btn_mob">
+                <select name="#" id="#" class="button filters-box__btn filters-box__btn_mob">
                     <option value="top" class="filters-box__item">По популярности</option>
                     <option value="new" class="filters-box__item">Сначала новые</option>
                     <option value="old" class="filters-box__item">Сначала старые</option>
@@ -223,8 +225,8 @@
         </div>
         <div class="product-box__content">
             <article class="product">
-                <img class="product__img" src="./img/bed TATRAN_catalog.jpg" alt="chest VENT">
-                <h3 class="product__name">Кровать TATRAN</h3>
+                <img class="product__img" src="./img/bed-TATRAN_catalog.jpg" alt="chest VENT">
+                <h2 class="product__name">Кровать TATRAN</h2>
                 <p class="product__desc">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
                 <p class="product__price">120 000 руб.</p>
                 <div class="product__icon-box">
@@ -238,8 +240,8 @@
             </article>
 
             <article class="product">
-                <img class="product__img" src="./img/armchair VILORA.jpg" alt="armchair VILORA">
-                <h3 class="product__name">Кресло VILORA</h3>
+                <img class="product__img" src="./img/armchair-VILORA.jpg" alt="armchair VILORA">
+                <h2 class="product__name">Кресло VILORA</h2>
                 <p class="product__desc">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань.</p>
                 <p class="product__price">21 000 руб.</p>
                 <div class="product__icon-box">
@@ -253,8 +255,8 @@
             </article>
 
             <article class="product">
-                <img class="product__img" src="./img/table MENU_catalog.jpg" alt="table MENU">
-                <h3 class="product__name">Стол MENU</h3>
+                <img class="product__img" src="./img/table-MENU_catalog.jpg" alt="table MENU">
+                <h2 class="product__name">Стол MENU</h2>
                 <p class="product__desc">Европейский дуб - отличается особой прочностью и стабильностью.</p>
                 <p class="product__price">34 000 руб.</p>
                 <div class="product__icon-box">
@@ -268,8 +270,8 @@
             </article>
             
             <article class="product">
-                <img class="product__img" src="./img/sofa ASKESTA.jpg" alt="armchair ASKESTA">
-                <h3 class="product__name">Диван ASKESTA</h3>
+                <img class="product__img" src="./img/sofa-ASKESTA.jpg" alt="armchair ASKESTA">
+                <h2 class="product__name">Диван ASKESTA</h2>
                 <p class="product__desc">Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную кровать</p>
                 <p class="product__price">68 000 руб.</p>
                 <div class="product__icon-box">
@@ -283,8 +285,8 @@
             </article>
 
             <article class="product">
-                <img class="product__img" src="./img/armchair LUNAR.jpg" alt="table NORMAN">
-                <h3 class="product__name">Кресло LUNAR</h3>
+                <img class="product__img" src="./img/armchair-LUNAR.jpg" alt="table NORMAN">
+                <h2 class="product__name">Кресло LUNAR</h2>
                 <p class="product__desc">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки</p>
                 <p class="product__price">40 000 руб.</p>
                 <div class="product__icon-box">
@@ -298,8 +300,8 @@
             </article>
 
             <article class="product">
-                <img class="product__img" src="./img/closet Nastan.jpg" alt="sofa NASTAN">
-                <h3 class="product__name">Диван NASTAN</h3>
+                <img class="product__img" src="./img/closet-Nastan.jpg" alt="sofa NASTAN">
+                <h2 class="product__name">Диван NASTAN</h2>
                 <p class="product__desc">Мебель может быть оснащена разнообразными системами подсветки.</p>
                 <p class="product__price">80 000 руб.</p>
                 <div class="product__icon-box">
@@ -313,8 +315,8 @@
             </article>
 
             <article class="product">
-                <img class="product__img" src="./img/bed TATRAN_catalog.jpg" alt="chest VENT">
-                <h3 class="product__name">Кровать TATRAN</h3>
+                <img class="product__img" src="./img/bed-TATRAN_catalog.jpg" alt="chest VENT">
+                <h2 class="product__name">Кровать TATRAN</h2>
                 <p class="product__desc">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
                 <p class="product__price">120 000 руб.</p>
                 <div class="product__icon-box">
@@ -328,8 +330,8 @@
             </article>
 
             <article class="product">
-                <img class="product__img" src="./img/armchair VILORA.jpg" alt="armchair VILORA">
-                <h3 class="product__name">Кресло VILORA</h3>
+                <img class="product__img" src="./img/armchair-VILORA.jpg" alt="armchair VILORA">
+                <h2 class="product__name">Кресло VILORA</h2>
                 <p class="product__desc">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань.</p>
                 <p class="product__price">21 000 руб.</p>
                 <div class="product__icon-box">
@@ -343,8 +345,8 @@
             </article>
 
             <article class="product">
-                <img class="product__img" src="./img/table MENU_catalog.jpg" alt="table MENU">
-                <h3 class="product__name">Стол MENU</h3>
+                <img class="product__img" src="./img/table-MENU_catalog.jpg" alt="table MENU">
+                <h2 class="product__name">Стол MENU</h2>
                 <p class="product__desc">Европейский дуб - отличается особой прочностью и стабильностью.</p>
                 <p class="product__price">34 000 руб.</p>
                 <div class="product__icon-box">
@@ -358,8 +360,8 @@
             </article>
             
             <article class="product">
-                <img class="product__img" src="./img/sofa ASKESTA.jpg" alt="armchair ASKESTA">
-                <h3 class="product__name">Диван ASKESTA</h3>
+                <img class="product__img" src="./img/sofa-ASKESTA.jpg" alt="armchair ASKESTA">
+                <h2 class="product__name">Диван ASKESTA</h2>
                 <p class="product__desc">Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную кровать</p>
                 <p class="product__price">68 000 руб.</p>
                 <div class="product__icon-box">
@@ -373,8 +375,8 @@
             </article>
 
             <article class="product">
-                <img class="product__img" src="./img/armchair LUNAR.jpg" alt="table NORMAN">
-                <h3 class="product__name">Кресло LUNAR</h3>
+                <img class="product__img" src="./img/armchair-LUNAR.jpg" alt="table NORMAN">
+                <h2 class="product__name">Кресло LUNAR</h2>
                 <p class="product__desc">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки</p>
                 <p class="product__price">40 000 руб.</p>
                 <div class="product__icon-box">
@@ -388,8 +390,8 @@
             </article>
 
             <article class="product">
-                <img class="product__img" src="./img/closet Nastan.jpg" alt="sofa NASTAN">
-                <h3 class="product__name">Диван NASTAN</h3>
+                <img class="product__img" src="./img/closet-Nastan.jpg" alt="sofa NASTAN">
+                <h2 class="product__name">Диван NASTAN</h2>
                 <p class="product__desc">Мебель может быть оснащена разнообразными системами подсветки.</p>
                 <p class="product__price">80 000 руб.</p>
                 <div class="product__icon-box">
@@ -407,11 +409,13 @@
     <a href="#" class="link-more center">Показать еще</a>
 
     <footer class="footer center">
-        <img class="footer__logo" src="./img/logo-black.svg" alt="logo">
+        <a href="./index.html" class="index-link">
+            <img class="footer__logo" src="./img/logo-black.svg" alt="logo">
+        </a>
         <div class="footer__content">
             <div class="footer__info">
                 <div class="footer__menu">
-                    <h4 class="footer__title">Меню</h4>
+                    <h3 class="footer__title">Меню</h3>
                     <nav>
                         <a class="footer__link" href="index.html">Главная</a>
                         <a class="footer__link" href="catalog.html">Каталог</a>
@@ -419,7 +423,7 @@
                     </nav>
                 </div>
                 <div class="footer__menu">
-                    <h4 class="footer__title">Контакты</h4>
+                    <h3 class="footer__title">Контакты</h3>
                     <a class="footer__link" href="tel:+79088008080">+7 908 800 80 80</a>
                     <a class="footer__link" href="mailto:help@interier.com">help@interier.com</a>
                     <div class="footer__social">

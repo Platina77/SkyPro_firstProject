@@ -6,7 +6,7 @@
     margin-bottom: 64px;
 }
 
-.page__title{
+.page-title{
     color:#fff;
     font-size: 64px;
     font-style: normal;
@@ -42,12 +42,12 @@
     color: #888;
 }
 
-.filters-box{
+.product-box__filters-box{
     display: flex;
     gap: 10px;
 }
 
-.filters-box__filter{
+.filters-box{
     position: relative;
 }
 
@@ -149,7 +149,7 @@
       padding-left: 29px;
     }
 
-    &__label_standart{
+    &__label_standard{
       &::before{
         border: 1px solid #888;
       }
